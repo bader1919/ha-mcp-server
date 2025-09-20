@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "home-assistant": {
+      "command": "node",
+      "args": ["/path/to/your/ha-mcp-server/index.js"],
+      "env": {
+        "HA_BASE_URL": "https://your-ha-instance.duckdns.org:8123",
+        "HA_ACCESS_TOKEN": "your-long-lived-access-token"
+      }
+    }
+  }
+}
