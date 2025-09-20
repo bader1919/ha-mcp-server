@@ -1,0 +1,20 @@
+name = "ha-mcp-server"
+main = "index.js"
+compatibility_date = "2024-01-01"
+node_compat = true
+
+[vars]
+# Replace these with your actual Home Assistant details
+# You can also set these as secrets using: wrangler secret put HA_BASE_URL
+# HA_BASE_URL = "https://your-ha-instance.duckdns.org:8123"
+# HA_ACCESS_TOKEN = "your-long-lived-access-token"
+
+# For production, use secrets instead of vars:
+# Run: wrangler secret put HA_BASE_URL
+# Run: wrangler secret put HA_ACCESS_TOKEN
+
+[env.production]
+name = "ha-mcp-server-prod"
+
+[env.staging]
+name = "ha-mcp-server-staging"
